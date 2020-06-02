@@ -8,6 +8,7 @@
 #include <math.h>
 
 
+
 typedef struct _Data Data;
 struct _Data{
 	char title[50];
@@ -27,8 +28,7 @@ struct _node{
     node *last;
 };
 
-node *create_node(Data d,int x);
-void delete_node(node *n);
+
 
 #endif
 

@@ -18,12 +18,14 @@ bool enqueue(queue q, Data d){
 }
 
 Data dequeue(queue q){
+	Data arr;
+	arr.title[50] = '1';
 	if(q == NULL){
-		return -1;
+		return arr;
 	}
 
 	if(is_empty(s)){
-		return -1;
+		return arr;
 	}
 
 	Data d = q->head->data;
@@ -34,6 +36,8 @@ Data dequeue(queue q){
 }
 
 Data first(queue q){
-	if (is_empty(q)) return -1;
+	Data arr;
+	arr.title[50] = '1';
+	if (is_empty(q)) return arr;
 	return q->head->data;
 }
